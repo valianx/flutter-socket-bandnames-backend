@@ -25,6 +25,13 @@
         socket.on("mensaje", (data) => {
             console.log(data);
         })
+        socket.on("emitir-mensaje", (data) => {
+            console.log(data);
+        })
+        socket.on("active-bands", (data) => {
+            console.clear();
+            console.table(data);
+        })
     </script>
 </body>
 
